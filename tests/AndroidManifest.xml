@@ -16,6 +16,7 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.android.volley.tests">
 
     <uses-sdk android:minSdkVersion="8" />
@@ -25,6 +26,7 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="com.android.volley" />
+        android:targetPackage="com.android.volley"
+        tools:replace="android:targetPackage"/>
 
 </manifest>
